@@ -23,19 +23,19 @@ public class Main {
 //        System.out.println(((Dog) dog2).getMaxHeightJump(8));
 //        System.out.println(dog1.getMaxLenghtRun(10));
 
-        cat1.getMaxLenghtRun(6);
-        cat1.getMaxHeightJump(6);
+        cat1.getMaxLenghtRun(cat1.getAge());
+        cat1.getMaxHeightJump(cat1.getAge());
 
-        ((Cat) cat2).getMaxLenghtRun(2);
-        ((Cat) cat2).getMaxHeightJump(2);
+        ((Cat) cat2).getMaxLenghtRun(cat2.getAge());
+        ((Cat) cat2).getMaxHeightJump(cat2.getAge());
 
-        dog1.getMaxLenghtRun(13);
-        dog1.getMaxHeightJump(13);
-        dog1.getMaxLenghtSwim(13);
+        dog1.getMaxLenghtRun(dog1.getAge());
+        dog1.getMaxHeightJump(dog1.getAge());
+        dog1.getMaxLenghtSwim(dog1.getAge());
 
-        ((Dog) dog2).getMaxLenghtRun(3);
-        ((Dog) dog2).getMaxHeightJump(3);
-        ((Dog) dog2).getMaxLenghtSwim(3);
+        ((Dog) dog2).getMaxLenghtRun(dog2.getAge());
+        ((Dog) dog2).getMaxHeightJump(dog2.getAge());
+        ((Dog) dog2).getMaxLenghtSwim(dog2.getAge());
 
         System.out.println("Результаты котиков: ");
         System.out.println();
@@ -61,5 +61,6 @@ public class Main {
         System.out.println("run: "+dog2.run(400));
         System.out.println("jump over: " + dog2.jumpOver(30));
         System.out.println("swim: " + dog2.swim(5));
+
     }
 }

@@ -38,4 +38,12 @@ public class Animal {
         System.out.println(type + " " + name);
     }
 
+    public void printAge(){
+        System.out.println(age);
+    }
+
+    public int getAge () {
+        return age;
+    }
+
 }
